@@ -1,7 +1,7 @@
 package io.github.haykam821.sneakyscreens.mixin;
 
-import net.minecraft.client.options.GameOptions;
-import net.minecraft.client.options.KeyBinding;
+import net.minecraft.client.option.GameOptions;
+import net.minecraft.client.option.KeyBinding;
 import net.minecraft.client.MinecraftClient;
 
 import org.spongepowered.asm.mixin.Mixin;
