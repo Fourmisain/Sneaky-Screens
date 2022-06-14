@@ -8,7 +8,7 @@ public class Main {
 		boolean screenVisible = client.currentScreen != null;
 
 		// prevent player from flying down when opening a screen
-		boolean isFlying = client.player != null && client.player.abilities.flying;
+		boolean isFlying = client.player != null && client.player.getAbilities().flying;
 		if (isFlying)
 			return false;
 
