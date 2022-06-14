@@ -11,7 +11,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 @Mixin(MinecraftClient.class)
 public class MinecraftClientMixin {
-	@Inject(at = @At("RETURN"), method="openScreen")
+	@Inject(at = @At("RETURN"), method="setScreen")
     private void openScreen(Screen screen, CallbackInfo ci) {
 		if (screen == null) {
 			KeyBinding.updatePressedStates();
